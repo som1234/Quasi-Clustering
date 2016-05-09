@@ -37,7 +37,7 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 
 
 ## Software Requirements: 
-* Python 2.7 or above 
+* Python 2.7 or above (installation location should be included in $PATH)
 * Python Packages : pysam
 * ATLAS and LAPACK for gcc compilation
 * Samtools
@@ -57,9 +57,13 @@ This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has n
     1) Unzip the Source files in to local directory. We will refer to the full path to this directory as SOURCE. 
     2) Transfer the input data files to another local directory.  We will refer to the full path of this directory as DATA.  
     3) Denote the full path to the directory where Samtools is installed as SAMTOOLS
-    4) Navigate to SOURCE directory and change the Permission of the file SDHAP_master.sh as follows : 
+    4) [Optional] Edit the file SDHAP_master.sh to change the default values of the following parameters 
+    	Snp quality threshold (Lower threshold of Snp quality in VCF format)
+    	sample Probability (for random sub sampling of reads) and 
+    	read length thresholds (lower cutoff threshold for read lengths)
+    5) Navigate to SOURCE directory and change the Permission of the file SDHAP_master.sh as follows : 
         'chmod 755 SDHAP_master.sh'
-    5) Navigate to DATA directory and type the following command to start the quasispecies reconstruction : 
+    6) Navigate to DATA directory and type the following command to start the quasispecies reconstruction : 
     	'SOURCE/SDHAP_master.sh K1 K2 SOURCE DATA NAME REG1 REG2 SAMTOOLS'
 	    where, the arguments are explained as follows -
 	    'K1,K2' - start and end value of number of quasispecies variants for model selection (K1 > 1)
@@ -102,8 +106,7 @@ This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has n
     Austin
     Texas 78712
     USA
-
-email: sbarik@utexas.edu
+    email: sbarik@utexas.edu
 
 
 
