@@ -3,6 +3,7 @@
 ## Description: 
 
 This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies Reconstruction problem. This project contains the software implementation of a novel algorithm based on semidefinite relaxation based correlation clustering approach for the Quasispecies problem. Specifically, our software has the following function 
+
     - 1) Reconstruct Full Length Haplotypes from Reference genome and Aligned Reads
     - 2) Estimate the abundances of individual species in the mixture 
     - 3) Choose the optimal number of quasispecies variants  present in the mixture
@@ -12,6 +13,7 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 ### Source Files:
 
    Python Scripts 
+   
         - SDHAP_vcf_to_snp.py
         - SDHAP_create_frag.py
         - SDHAP_K_iter.py
@@ -21,8 +23,11 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
         - SDHAP_func.py
    
      Bash Scripts 
+     
         - SDHAP_master.sh
+        
     C files
+    
         - quasi_clus.c
         - quasi_clus (executable)
 
@@ -64,6 +69,7 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 
 ## Sample Run: 
     Download Sample data to a directory  DATA and source file to a directory SOURCE
+    
     Type the following commands in a Bash shell - 
     *'chmod 755 SOURCE/SDHAP_master.sh;' 
     *'cd DATA/sample_data;' 
