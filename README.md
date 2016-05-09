@@ -43,6 +43,9 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 * ATLAS and LAPACK for gcc compilation
 * Samtools
 
+## OS Requirements: 
+
+This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has not been tested on Windows or Mac Platforms. 
 
 ## Input Data Required: 
 
