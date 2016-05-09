@@ -11,7 +11,7 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 
 ## Files:
 ### Source Files:
-   Python Scripts 
+    Python Scripts 
    
         - SDHAP_vcf_to_snp.py
         - SDHAP_create_frag.py
@@ -21,7 +21,7 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
         - SDHAP_class.py
         - SDHAP_func.py
    
-     Bash Scripts 
+    Bash Scripts 
      
         - SDHAP_master.sh
         
