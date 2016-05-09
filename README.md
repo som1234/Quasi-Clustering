@@ -61,6 +61,7 @@ This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has n
     	Snp quality threshold (Lower threshold of Snp quality in VCF format)
     	sample Probability (for random sub sampling of reads) and 
     	read length thresholds (lower cutoff threshold for read lengths)
+    	Also, if ATLAS in installed in non-standard location, then change the variables $ATLAS_LIB and $ATLAS_INCL accordingly in this file. 
     5) Navigate to SOURCE directory and change the Permission of the file SDHAP_master.sh as follows : 
         'chmod 755 SDHAP_master.sh'
     6) Navigate to DATA directory and type the following command to start the quasispecies reconstruction : 
