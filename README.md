@@ -3,16 +3,15 @@
 ## Description: 
 
 This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies Reconstruction problem. This project contains the software implementation of a novel algorithm based on semidefinite relaxation based correlation clustering approach for the Quasispecies problem. Specifically, our software has the following function 
-
     - 1) Reconstruct Full Length Haplotypes from Reference genome and Aligned Reads
     - 2) Estimate the abundances of individual species in the mixture 
     - 3) Choose the optimal number of quasispecies variants  present in the mixture
 
 
-## Progam Files:
+## Files:
+### Source Files:
 
-###Python Scripts 
-
+   Python Scripts 
         - SDHAP_vcf_to_snp.py
         - SDHAP_create_frag.py
         - SDHAP_K_iter.py
@@ -22,16 +21,12 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
         - SDHAP_func.py
    
      Bash Scripts 
-
         - SDHAP_master.sh
-
     C files
-
         - quasi_clus.c
-        - quasi_clus
+        - quasi_clus (executable)
 
-## Sample Data File:
-
+### Sample Data File:
     - Ecoli.fasta
     - Ecoli.sam 
     - Ecoli.vcf 
@@ -46,13 +41,12 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 
 ## Input Data Required: 
 
-* Reference genome in *.fasta format
-* Sam file containing reads aligned to the above reference genome
-* vcf file generated based on the aligned reads and reference as above. 
+* Reference genome in '*.fasta' format
+* 'Sam' file containing reads aligned to the above reference genome
+* 'vcf' file generated based on the aligned reads and reference as above. 
 
 
 ## Steps: 
-
     1) Unzip the Source files in to local directory. We will refer to the full path to this directory as SOURCE. 
     2) Transfer the input data files to another local directory.  We will refer to the full path of this directory as DATA.  
     3) Denote the full path to the directory where Samtools is installed as SAMTOOLS
@@ -69,29 +63,24 @@ This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies 
 	
 
 ## Sample Run: 
-
     Download Sample data to a directory  DATA and source file to a directory SOURCE
-    
     Type the following commands in a Bash shell - 
-    'chmod 755 SOURCE/SDHAP_master.sh;' 
-    'cd DATA/sample_data;' 
-    'SOURCE/SDHAP_master.sh 2 10 SOURCE DATA Ecoli 1 10000 SAMTOOLS'
+    *'chmod 755 SOURCE/SDHAP_master.sh;' 
+    *'cd DATA/sample_data;' 
+    *'SOURCE/SDHAP_master.sh 2 10 SOURCE DATA Ecoli 1 10000 SAMTOOLS'
 	
 
 ## Output Files: 
-
-###    Main file 
-
+    Main file 
         - NAME_K_recon.fasta - Full length Reconstructed Quasispecies Fasta file with 'K' haplotypes and their frequencies
         (e.g. Ecoli_2_recon.fasta)
-###    Secondary output files
+    Secondary output files
         - NAME.frags (read-snp format)
         - NAME.snp (snp locations)
         - NAME_K_output.txt (snp-variant format) 
         - NAME.Fstats (Pseudo F statistics)
         - tmp_output.txt (Contains MEC, error rate  information)
-
-###    Temporary Files 
+    Temporary Files 
         - tmp_coverage_*.txt 
         - tmp_objective_*.txt
         - run_SDHAP.sh
