@@ -94,6 +94,15 @@ This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has n
         - run_SDHAP.sh
         - read_snp_info.txt
 
+### Contact Information : 
+Somsubhra Barik
+Electrical and Computer Engineering Department
+THe University of Texas at Austin
+Austin
+Texas 78712
+USA
+
+email: sbarik@utexas.edu
 
 
 
