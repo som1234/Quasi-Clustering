@@ -96,17 +96,12 @@ This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has n
 
 ### Contact Information : 
 
-Somsubhra Barik
-
-Electrical and Computer Engineering Department
-
-THe University of Texas at Austin
-
-Austin
-
-Texas 78712
-
-USA
+    Somsubhra Barik
+    Electrical and Computer Engineering Department
+    The University of Texas at Austin
+    Austin
+    Texas 78712
+    USA
 
 email: sbarik@utexas.edu
 
