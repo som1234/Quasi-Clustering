@@ -62,7 +62,7 @@ This software has been tested on Unix Debian 7 and RHEL 6 distribution. It has n
     5) Navigate to DATA directory and type the following command to start the quasispecies reconstruction : 
     	'SOURCE/SDHAP_master.sh K1 K2 SOURCE DATA NAME REG1 REG2 SAMTOOLS'
 	    where, the arguments are explained as follows -
-	    'K1,K2' - start and end value of number of quasispecies variants for model selection
+	    'K1,K2' - start and end value of number of quasispecies variants for model selection (K1 > 1)
 	    'NAME' - ascii string denoting name of the experiment (user chooses)
 	    'REG1, REG2' - start and end of the genomic region along the reference over which quasispecies reconstruction is performed 
 
