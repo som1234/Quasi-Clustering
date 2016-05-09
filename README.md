@@ -1,11 +1,11 @@
 # Quasi-Clustering
-Description : 
+# Description : 
 This is an Viral Quasispecies Reconstruction Software to solve the Quasispecies Reconstruction problem. This project contains the software implementation of a novel algorithm based on semidefinite relaxation based correlation clustering approach for the Quasispecies problem. Specifically, our software has the following function - 
     1) Reconstruct Full Length Haplotypes from Reference genome and Aligned Reads
     2) Estimate the abundances of individual species in the mixture 
     3) Choose the optimal number of quasispecies variants  present in the mixture
 
-Progam Files:
+# Progam Files:
     Python Scripts 
         - SDHAP_vcf_to_snp.py
         - SDHAP_create_frag.py
@@ -20,13 +20,13 @@ Progam Files:
         - quasi_clus.c
         - quasi_clus
 
-Data File:
+# Data File:
     - Ecoli.fasta
     - Ecoli.sam 
     - Ecoli.vcf 
 
 
-Software Requirements: 
+# Software Requirements: 
     1) Python 2.7 or above 
     	- Packages : pysam, pyvcf
     2) ATLAS and LAPACK for gcc compilation
